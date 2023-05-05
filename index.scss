@@ -1,0 +1,356 @@
+/******************* Reset CSS *******************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  word-break: break-word;
+}
+body {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 1.2em;
+  background-color: #fff;	
+}
+img {
+	max-width: 100%;
+  height: auto;
+}
+h1 {
+  font-size: 71px;
+	font-weight: 700;
+	line-height: 90px;
+}
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+	line-height: 45px;
+	margin-top: 15px;
+}
+h3 {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 26px;
+}
+p{
+	font-size: 18px;
+	line-height: 36px;
+}
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.overflow {
+	overflow: hidden;
+}
+.container_center {
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media only screen and (max-width: 1199px){ 
+  .container_center {
+    max-width: 1140px;
+	}
+}
+@media only screen and (max-width: 991px){ 
+  .container_center {
+    max-width: 960px;
+    padding-left: 15px;
+    padding-right: 15px;
+	}
+}
+@media only screen and (max-width: 767px) {
+  .container_center {
+    max-width: 720px;
+  }
+}
+/*******************End Reset CSS *******************/
+.section__1 {
+  background: #FFFDF4;
+  .section__1-header {
+    padding-top: 70px;
+    width: 380px;
+    @media only screen and (max-width: 479px) {
+      width: 100%;
+    }
+    .header__title {
+      font-size: 45px;
+      line-height: 53px;
+      color:#374639;
+      @media only screen and (max-width: 767px) {
+        font-size: 40px;
+        line-height: 45px;
+      }
+      @media only screen and (max-width: 479px) {
+        font-size: 35px;
+      }
+    }
+    .header__subtitle {
+      margin-top: 20px;
+      font-size: 19px;
+      line-height: 27px;
+      color: #3F514B;
+      @media only screen and (max-width: 767px) {
+        font-size: 17px;
+        margin-top: 10px;
+      }
+    }
+  }
+  .section__1-content {
+    display: flex;
+    margin-top: 40px;
+    padding-bottom: 79px;
+    @media only screen and (max-width: 991px) {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .content__item {
+      width: calc((100% / 4) - 15px);
+      margin: 0 10px;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      &:nth-child(3) {
+        .content__item-text {
+          .text__timetable {
+            .text__timetable-item {
+              .item__content {
+                font-size: 17px;
+              }
+            }
+          }
+        }
+      }
+      @media only screen and (max-width: 991px) {
+        width: calc((100% / 2) - 15px);
+        &:nth-child(2) {
+          margin-right: 0;
+        }
+        &:nth-child(3) {
+          margin-left: 0;
+        }
+        &:nth-child(3), &:nth-child(4) {
+          margin-top: 20px;
+        }
+      }
+      @media only screen and (max-width: 767px) {
+        width: calc((100% / 2) - 10px);
+      }
+      @media only screen and (max-width: 479px) {
+        width: 100%;
+        margin: 0;
+        &:nth-child(2) {
+          margin-top: 20px;
+        }
+      }
+      .content__item-img {
+        > img {
+          width: 100%;
+        }
+      }
+      .content__item-text {
+        .text__title {
+          margin-top: 18px;
+          font-size: 20px;
+          line-height: 25px;
+          color: #414F42;
+        }
+        .text__subtitle {
+          margin-top: 8px;
+          font-size: 16px;
+          line-height: 24px;
+          color: #3F514B;
+        }
+        .text__price {
+          display: flex;
+          margin-top: 6px;
+          align-items: center;
+          .text__price-old {
+            font-size: 13px;
+            line-height: 18px;
+            font-weight: 400px;
+            color: #72776C;
+            text-decoration:line-through;
+          }
+          .text__price-current {
+            font-size: 18px;
+            line-height: 23px;
+            margin-left: 6px;
+            color: #3F514B;
+          }
+        }
+        .text__timetable {
+          margin-top: 20px;
+          list-style-type: none;
+          .text__timetable-item {
+            padding-top: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #ECEDEC;
+            &:first-child {
+              border-top: 1px solid #ECEDEC;
+            }
+            .item__title {
+              text-transform: uppercase;
+              color: #72776C;
+              font-size: 15px;
+              line-height: 18px;
+              margin-right: 10px;
+            }
+            .item__content {
+              color: #4E5C58;
+              font-size: 14px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.section__2 {
+  padding: 50px 0;
+  background-color: #F5F5F5;
+  .section__2-card {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    @media only screen and (max-width: 991px){ 
+      padding: 20px;
+    }
+    @media only screen and (max-width: 767px){ 
+      flex-wrap: wrap;
+      padding: 30px;
+    }
+    .card__img, .card__text {
+      width: 50%;
+    }
+    .card__img {
+      @media only screen and (max-width: 767px){ 
+        width: 100%;
+      }
+      > img {
+        width: 100%;
+        border-radius: 10px;
+      }
+    }
+    .card__text {
+      text-align: center;
+      margin-left: 20px;
+      @media only screen and (max-width: 767px){ 
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+      }
+      .card__text-title {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 20px;
+        color: rgba(0, 0, 0, 0.3);
+        @media only screen and (max-width: 991px){ 
+          margin-top: 5px;
+        }
+        @media only screen and (max-width: 767px){ 
+          font-size: 16px;
+        }
+      }
+      .card__text-icon {
+        margin-top: 55px;
+        @media only screen and (max-width: 1199px){ 
+          margin-top: 40px;
+        }
+        @media only screen and (max-width: 991px){ 
+          margin-top: 20px;
+          img {
+            width: 16px;
+          }
+        }
+        @media only screen and (max-width: 767px){ 
+          margin-top: 30px;
+          img {
+            width: 20px;
+          }
+        }
+        @media only screen and (max-width: 767px){ 
+          margin-top: 45px;
+        }
+        @media only screen and (max-width: 479px){ 
+          margin-top: 30px;
+          img {
+            width: 16px;
+          }
+        }
+      }
+      .card__text-content {
+        margin-top: 13px;
+        font-size: 30px;
+        line-height: 2rem;
+        color: #0D0D0D;
+        @media only screen and (max-width: 1199px){ 
+          font-size: 21px;
+          line-height: 30px;
+        }
+        @media only screen and (max-width: 991px){ 
+          font-size: 18px;
+          margin-top: 10px;
+        }
+        @media only screen and (max-width: 767px){ 
+          margin-top: 13px;
+          font-size: 25px;
+          line-height: 40px;
+        }
+        @media only screen and (max-width: 767px){ 
+          font-size: 22px;
+        }
+        @media only screen and (max-width: 479px){ 
+          font-size: 18px;
+          line-height: 30px;
+        }
+      }
+      .card__text-subtitle {
+        margin-top: 20px;
+        @media only screen and (max-width: 991px){ 
+          margin-top: 10px;
+        }
+        @media only screen and (max-width: 767px){ 
+          margin-top: 20px;
+        }
+        .subtitle__name {
+          font-size: 16px;
+          line-height: 20px;
+          color: #0D0D0D;
+          @media only screen and (max-width: 991px){ 
+            font-size: 14px;
+            line-height: 25px;
+          }
+          @media only screen and (max-width: 767px){ 
+            font-size: 16px;
+            line-height: 20px;
+          }
+        }
+        .subtitle__job {
+          color: rgba(0, 0, 0, 0.3);
+          font-size: 15px;
+          line-height: 22px;
+          @media only screen and (max-width: 991px){ 
+            font-size: 14px;
+            line-height: 20px;
+          }
+          @media only screen and (max-width: 767px){ 
+            font-size: 15px;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+  }
+}
